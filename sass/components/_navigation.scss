@@ -1,6 +1,11 @@
+.hesder {
+  position: relative;
+}
+
 .main-nav,
 .nav {
   @extend %property-display;
+  justify-content: space-between;
   @media screen and (max-width: 767px) {
     min-height: 60px;
   }

@@ -336,7 +336,7 @@ summary {
 }
 
 .block-foot__list .block-foot__link, .clients .clients__link, .comands__list, .team-link__list, .team-link__list .team-link__link, .main-nav,
-.nav, .we-do__block .we-do__list {
+.nav, .ground-of-icons, .we-do__block .we-do__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,7 +345,7 @@ summary {
           align-items: center;
 }
 
-.block-foot__list, .clients__list, .comands__list, .our-pluses__section__list, .portfolio__section .studio-projects__list, .we-do__block .we-do__list {
+.block-foot__list, .clients__list, .comands__list, .our-pluses__list, .portfolio__section .studio-projects__list, .we-do__block .we-do__list {
   margin: 0;
   padding: 0;
 }
@@ -745,17 +745,18 @@ img {
 }
 
 .btn {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  display: inline-block;
   letter-spacing: 0.06em;
+  text-align: center;
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
-  padding: 10px 32px;
-  margin-top: 30px;
-  margin-right: 0;
   border-style: none;
   outline: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1181,25 +1182,97 @@ img {
 
 .hero__section {
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.hero__section .hero__title {
+.overlay {
+  height: 400px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_m@1x480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_m@1x480.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c4c4c4;
+  /*background-position: center;*/
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_m@2x960.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_m@2x960.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_m@3x1440.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_m@3x1440.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_t@1x768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_t@1x768.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_t@2x1536.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_t@2x1536.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-resolution: 3dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_t@3x2304.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_t@3x2304.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .overlay {
+    max-width: 1600px;
+    /*height: 600px;*/
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_pk@1x1600.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_pk@1x1600.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_pk@2x3200.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_pk@2x3200.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-resolution: 3dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_pk@3x4800.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_pk@3x4800.jpg");
+  }
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .logo, .logo__header, .logo__footer {
@@ -1215,6 +1288,17 @@ img {
 
 .logo__footer {
   color: #ffffff;
+}
+
+.hesder {
+  position: relative;
+}
+
+.main-nav,
+.nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -1282,14 +1366,13 @@ img {
   border-radius: 2px;
 }
 
-.our-pluses__section .our-pluses__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.our-pluses__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .our-pluses__section .our-pluses__list {
+  .our-pluses__section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1302,129 +1385,70 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
-.our-pluses__section {
-  padding: 94px 0;
+@media screen and (max-width: 767px) {
+  .our-pluses__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.our-pluses__section .our-pluses__list .our-pluses__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .our-pluses__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 
-.our-pluses__section__item {
-  width: 270px;
+@media screen and (min-width: 1200px) {
+  .our-pluses__item {
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
-.our-pluses__section .our-pluses__title {
+.our-pluses__title {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   color: #212121;
-  padding-bottom: 10px;
-  margin: 0;
 }
 
-.our-pluses__section .our-pluses__description {
+@media screen and (min-width: 768px) {
+  .our-pluses__title {
+    text-align: left;
+  }
+}
+
+.our-pluses__description {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 24px;
   color: #757575;
-  margin: 0;
 }
 
-.our-pluses__section .ground-of-icons {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.ground-of-icons {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
-.our-pluses__section .ground-of-icons .icons-of-pluses {
+.ground-of-icons .icons-of-pluses {
   width: 70px;
   height: 70px;
-}
-
-.overlay {
-  /*height: 600px;*/
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_m@1x480.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_m@1x480.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_m@2x960.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_m@2x960.jpg");
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_m@3x1440.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_m@3x1440.jpg");
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_t@1x768.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_t@1x768.jpg");
-  }
-}
-
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_t@2x1536.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_t@2x1536.jpg");
-  }
-}
-
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-resolution: 3dppx) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_t@3x2304.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_t@3x2304.jpg");
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .overlay {
-    max-width: 1600px;
-    height: 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_pk@1x1600.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_pk@1x1600.jpg");
-  }
-}
-
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_pk@2x3200.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_pk@2x3200.jpg");
-  }
-}
-
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-resolution: 3dppx) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/ovarlay/hero_pk@3x4800.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/ovarlay/hero_pk@3x4800.jpg");
-  }
 }
 
 .portfolio__section {
@@ -1584,6 +1608,12 @@ img {
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
   color: #ffffff;
+}
+
+@media not screen and (min-width: 1200px) {
+  .we-do__block {
+    display: none;
+  }
 }
 
 .mobile-menu {

@@ -1,16 +1,134 @@
 .hero__section {
   text-align: center;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.overlay {
+  height: 400px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, $color-gradient, $color-gradient),
+    url("../images/ovarlay/hero_m@1x480.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $background-overlay;
+  /*background-position: center;*/
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url("../images/ovarlay/hero_m@2x960.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url("../images/ovarlay/hero_m@3x1440.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url("../images/ovarlay/hero_t@1x768.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url("../images/ovarlay/hero_t@2x1536.jpg");
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      .overlay {
+        background-image: linear-gradient(
+            to right,
+            $color-gradient,
+            $color-gradient
+          ),
+          url("../images/ovarlay/hero_t@3x2304.jpg");
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .overlay {
+    max-width: 1600px;
+    /*height: 600px;*/
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url("../images/ovarlay/hero_pk@1x1600.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url("../images/ovarlay/hero_pk@2x3200.jpg");
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      .overlay {
+        background-image: linear-gradient(
+            to right,
+            $color-gradient,
+            $color-gradient
+          ),
+          url("../images/ovarlay/hero_pk@3x4800.jpg");
+      }
+    }
+  }
 }
 
 .hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $background-color;
+
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $background-color;
-  text-align: center;
-  align-items: center;
-  margin: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }

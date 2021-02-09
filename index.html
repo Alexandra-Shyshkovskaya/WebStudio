@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <!--Шапка сайта-->
         <div class="container main-nav">
         <nav class="nav">
@@ -20,35 +20,36 @@
                 <use class="close__mob" href="images/symbol-defs.svg#icon-close_40px"></use>
             </svg>
         </button>
-        <div class="mobile-site-menu" data-menu>
-            <ul class="mobile-site-menu__list">
-            <li class="mobile-site-menu__item"> <a class="mobile-site-menu__link current" href="index.html">Студия</a> </li>
-            <li class="mobile-site-menu__item"> <a class="mobile-site-menu__link" href="portfolio.html">Портфолио</a> </li>
-            <li class="mobile-site-menu__item"> <a class="mobile-site-menu__link" href="">Контакты</a> </li>
-            </ul>
-            <ul class="mobile-contacts">
-                <li class="mobile-contacts__item">
-                    <a class="mobile-contacts__tel" href="tel:+380961111111">
-                        +38 096 111 11 11</a>
-                </li>
-                <li class="mobile-contacts__item">
-                    <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
-                        info@devstudio.com </a>
-                </li>
-            </ul>
-            <ul class="mobile-social">
-                <li class="mobile-social__item"><a class="mobile-social__link">Instagram</a></li>
-                <li class="mobile-social__item"><a class="mobile-social__link">Twitter</a></li>
-                <li class="mobile-social__item"><a class="mobile-social__link">Facebook</a></li>
-                <li class="mobile-social__item"><a class="mobile-social__link">LinkedIn</a></li>
-            </ul>
-        </div>
-
             <ul class="nav__list">
                 <li class="nav__item"> <a class="nav__link current" href="index.html">Студия</a> </li>
                 <li class="nav__item"> <a class="nav__link" href="portfolio.html">Портфолио</a>  </li>
                 <li class="nav__item"> <a class="nav__link" href="">Контакты</a> </li>
             </ul>
+            <!--мобильное меню-->
+            <div class="mobile-site-menu" data-menu>
+                <ul class="mobile-site-menu__list">
+                    <li class="mobile-site-menu__item"> <a class="mobile-site-menu__link current" href="index.html">Студия</a> </li>
+                    <li class="mobile-site-menu__item"> <a class="mobile-site-menu__link" href="portfolio.html">Портфолио</a> </li>
+                    <li class="mobile-site-menu__item"> <a class="mobile-site-menu__link" href="">Контакты</a> </li>
+                </ul>
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__tel" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com </a>
+                    </li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item"><a class="mobile-social__link">Instagram</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link">Twitter</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link">Facebook</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link">LinkedIn</a></li>
+                </ul>
+            </div>
+
         </nav>
         
         <ul class="contacts__list">
@@ -210,25 +211,53 @@
         <ul class="we-do__list">
             <li class="we-do__item">
                 <div class="we-do__picture">
-                <img src="images/box1-min.jpg" 
-                alt="человек вводит алгоритм на планшете"
-                width="370" />
+                    <picture>
+                        <source srcset="./images/box1/box1.webp 1x,
+                        ./images/box1/box1@2x.webp 2x,
+                        ./images/box1/box1@3x.webp 3x" type="image/webp">
+                        <img srcset="./images/box1/box1.jpg 1x,
+                        ./images/box1/box1@2x.jpg 2x,
+                        ./images/box1/box1@3x.jpg 3x" sizes="(min-width: 1200px) 33.333vw"
+                          src="images/box1/box1.jpg"
+                          alt="человек вводит алгоритм на планшете"
+                          width="370"
+                          class="we-do__image"/>
+                    </picture>
                 <p class="we-do__text">Десктопные приложения</p>
                 </div>
             </li>
             <li class="we-do__item">
                 <div class="we-do__picture">
-                <img src="images/box2-min.jpg" 
-                alt="человек держит смартфон"
-                width="370" />
+                    <picture>
+                        <source srcset="./images/box2/box2.webp 1x,
+                        ./images/box2/box2@2x.webp 2x,
+                        ./images/box2/box2@3x.webp 3x" type="image/webp">
+                        <img srcset="./images/box2/box2.jpg 1x,
+                        ./images/box2/box2@2x.jpg 2x,
+                        ./images/box2/box2@3x.jpg 3x" sizes="(min-width: 1200px) 33.333vw"
+                        src="images/box2/box2.jpg"
+                        alt="человек держит смартфон"
+                        width="370"
+                        class="we-do__image"/>
+                    </picture>
                 <p class="we-do__text">Мобильные приложения</p>
                 </div>
             </li>
             <li class="we-do__item">
                 <div class="we-do__picture">
-                <img src="images/box3-min.jpg" 
-                alt="человек подбирает цветовую палитру на планшете"
-                width="370" />
+                    <picture>
+                        <source srcset="./images/box3/box3.webp 1x,
+                        ./images/box3/box3@2x.webp 2x,
+                        ./images/box3/box3@3x.webp 3x" type="image/webp">
+                        <img srcset="./images/box3/box3.jpg 1x,
+                        ./images/box3/box3@2x.jpg 2x,
+                        ./images/box3/box3@3x.jpg 3x" sizes="(min-width: 1200px) 33.333vw"
+                        src="images/box3/box3.jpg"
+                        alt="человек подбирает цветовую палитру на планшете"
+                        width="370"
+                        class="we-do__image"/>
+                    </picture>
+                
                 <p class="we-do__text">Дизайнерские решения</p>
                 </div>
             </li>
