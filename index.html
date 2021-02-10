@@ -223,7 +223,9 @@
                           width="370"
                           class="we-do__image"/>
                     </picture>
-                <p class="we-do__text">Десктопные приложения</p>
+                    <div class="we-do__overlay">
+                    <h3 class="we-do__text">Десктопные приложения</h3>
+                    </div>
                 </div>
             </li>
             <li class="we-do__item">
@@ -240,7 +242,9 @@
                         width="370"
                         class="we-do__image"/>
                     </picture>
-                <p class="we-do__text">Мобильные приложения</p>
+                    <div class="we-do__overlay">
+                        <h3 class="we-do__text">Мобильные приложения</h3>
+                    </div>
                 </div>
             </li>
             <li class="we-do__item">
@@ -257,8 +261,9 @@
                         width="370"
                         class="we-do__image"/>
                     </picture>
-                
-                <p class="we-do__text">Дизайнерские решения</p>
+                    <div class="we-do__overlay">
+                        <h3 class="we-do__text">Дизайнерские решения</h3>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -272,10 +277,36 @@
         <ul class="comands__list">
             <li class="comands__item">
                 <div class="comands-card">
-                <img 
-                src="images/team_card1-min.jpg" 
-                alt="сотрудник №1 мужчина в очках и в рубашке"
-                width="270"/>
+                <picture>
+                <source srcset="./images/team-member1/member1-mobile/igor_m.webp 450w,
+                ./images/team-member1/member1-mobile/igor_m@2x.webp 900w,
+                ./images/team-member1/member1-mobile/igor_m@3x.webp 1350w" type="image/webp"
+                      media="(max-width: 767px)">
+                <source srcset="./images/team-member1/member1-mobile/igor_m.jpg 450w,
+                                ./images/team-member1/member1-mobile/igor_m@2x.jpg 900w,
+                                ./images/team-member1/member1-mobile/igor_m@3x.jpg 1350w" type="image/jpg"
+                      media="(max-width: 767px)">
+                <source srcset="./images/team-member1/member1-desktop/igor_d.webp 270w,
+                                ./images/team-member1/member1-desktop/igor_d@2x.webp 540w,
+                                ./images/team-member1/member1-desktop/igor_d@3x.webp 810w" type="image/webp"
+                    media="(min-width: 1200px)">
+                <source srcset="./images/team-member1/member1-desktop/igor_d.jpg 270w,
+                                ./images/team-member1/member1-desktop/igor_d@2x.jpg 540w,
+                                ./images/team-member1/member1-desktop/igor_d@3x.jpg 810w" type="image/jpg"
+                    media="(min-width: 1200px)">
+                <source srcset="./images/team-member1/member1-tablet/igor_t.webp 354w,
+                                ./images/team-member1/member1-tablet/igor_t@2x.webp 708w,
+                                ./images/team-member1/member1-tablet/igor_t@3x.webp 1062w" type="image/webp"
+                    media="(min-width: 768px)">
+                <img srcset="./images/team-member1/member1-tablet/igor_t.jpg 354w,
+                             ./images/team-member1/member1-tablet/igor_t@2x.jpg 708w,
+                             ./images/team-member1/member1-tablet/igor_t@3x.jpg 1062w"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                     src="./images/team-member1/member1-tablet/igor_t.jpg" 
+                     alt="сотрудник №1 мужчина в очках и в рубашке"
+                     class="comands-card__image" />
+                </picture>
+                   
                 <h3 class="comands-card__name">Игорь Демьяненко</h3>
                 <p class="comands-card__profession">Product Designer</p>
                 
@@ -323,10 +354,35 @@
             </li>
             <li class="comands__item">
                 <div class="comands-card">
-                <img 
-                src="images/team_card2-min.jpg" 
-                alt="сотрудник №2 женщина в очках и в пиджаке" 
-                width="270"/>
+                <picture>
+                    <source srcset="./images/team-member2/member2-mobile/olga_m.webp 450w,
+                                    ./images/team-member2/member2-mobile/olga_m@2x.webp 900w,
+                                    ./images/team-member2/member2-mobile/olga_m@3x.webp 1350w" type="image/webp"
+                        media="(max-width: 767px)">
+                    <source srcset="./images/team-member2/member2-mobile/olga_m.jpg 450w,
+                                    ./images/team-member2/member2-mobile/olga_m@2x.jpg 900w,
+                                    ./images/team-member2/member2-mobile/olga_m@3x.jpg 1350w" type="image/jpg"
+                        media="(max-width: 767px)">
+                    <source srcset="./images/team-member2/member2-desktop/olga_d.webp 270w,
+                                    ./images/team-member2/member2-desktop/olga_d@2x.webp 540w,
+                                    ./images/team-member2/member2-desktop/olga_d@3x.webp 810w" type="image/webp"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/team-member2/member2-desktop/olga_d.jpg 270w,
+                                    ./images/team-member2/member2-desktop/olga_d@2x.jpg 540w,
+                                    ./images/team-member2/member2-desktop/olga_d@3x.jpg 810w" type="image/jpg"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/team-member2/member2-tablet/olga_t.webp 354w,
+                                    ./images/team-member2/member2-tablet/olga_t@2x.webp 708w,
+                                    ./images/team-member2/member2-tablet/olga_t@3x.webp 1062w" type="image/webp"
+                        media="(min-width: 768px)">
+                    <img srcset="./images/team-member2/member2-tablet/olga_t.jpg 354w,
+                                 ./images/team-member2/member2-tablet/olga_t@2x.jpg 708w,
+                                 ./images/team-member2/member2-tablet/olga_t@3x.jpg 1062w"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                        src="./images/team-member2/member2-tablet/olga_t.jpg" alt="сотрудник №2 женщина в очках и в пиджаке"
+                        class="comands-card__image" />
+                </picture>
+                
                 <h3 class="comands-card__name">Ольга Репина</h3>
                 <p class="comands-card__profession">Frontend Developer</p>
 
@@ -372,10 +428,35 @@
             </li>
             <li class="comands__item">
                 <div class="comands-card">
-                <img 
-                src="images/team_card3-min.jpg" 
-                alt="сотрудник №3 мужчина в рубашке"
-                width="270"/>           
+                    <picture>
+                        <source srcset="./images/team-member3/member3-mobile/niko_m.webp 450w,
+                                        ./images/team-member3/member3-mobile/niko_m@2x.webp 900w,
+                                        ./images/team-member3/member3-mobile/niko_m@3x.webp 1350w" type="image/webp"
+                                media="(max-width: 767px)">
+                        <source srcset="./images/team-member3/member3-mobile/niko_m.jpg 450w,
+                                        ./images/team-member3/member3-mobile/niko_m@2x.jpg 900w,
+                                        ./images/team-member3/member3-mobile/niko_m@3x.jpg 1350w" type="image/jpg"
+                                media="(max-width: 767px)">
+                        <source srcset="./images/team-member3/member3-desktop/niko_d.webp 270w,
+                                        ./images/team-member3/member3-desktop/niko_d@2x.webp 540w,
+                                        ./images/team-member3/member3-desktop/niko_d@3x.webp 810w" type="image/webp"
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team-member3/member3-desktop/niko_d.jpg 270w,
+                                        ./images/team-member3/member3-desktop/niko_d@2x.jpg 540w,
+                                        ./images/team-member3/member3-desktop/niko_d@3x.jpg 810w" type="image/jpg"
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team-member3/member3-tablet/niko_t.webp 354w,
+                                        ./images/team-member3/member3-tablet/niko_t@2x.webp 708w,
+                                        ./images/team-member3/member3-tablet/niko_t@3x.webp 1062w" type="image/webp"
+                                media="(min-width: 768px)">
+                        <img srcset="./images/team-member3/member3-tablet/niko_t.jpg 354w,
+                                     ./images/team-member3/member3-tablet/niko_t@2x.jpg 708w,
+                                     ./images/team-member3/member3-tablet/niko_t@3x.jpg 1062w"
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                            src="./images/team-member3/member3-tablet/niko_t.jpg" alt="сотрудник №3 мужчина в рубашке"
+                            class="comands-card__image" />
+                    </picture>
+          
                 <h3 class="comands-card__name">Николай Тарасов</h3>
                 <p class="comands-card__profession">Marketing</p>
 
@@ -421,9 +502,35 @@
             </li>
             <li class="comands__item">
                 <div class="comands-card">
-                <img src="images/team_card4-min.jpg" 
-                alt="сотрудник №4 мужчина в очках и в футболке"
-                width="270"/>
+                    <picture>
+                        <source srcset="./images/team-member4/member4-mobile/misha_m.webp 450w,
+                                        ./images/team-member4/member4-mobile/misha_m@2x.webp 900w,
+                                        ./images/team-member4/member4-mobile/misha_m@3x.webp 1350w" type="image/webp"
+                                media="(max-width: 767px)">
+                        <source srcset="./images/team-member4/member4-mobile/misha_m.jpg 450w,
+                                        ./images/team-member4/member4-mobile/misha_m@2x.jpg 900w,
+                                        ./images/team-member4/member4-mobile/misha_m@3x.jpg 1350w" type="image/jpg"
+                                media="(max-width: 767px)">
+                        <source srcset="./images/team-member4/member4-desktop/misha_d.webp 270w,
+                                        ./images/team-member4/member4-desktop/misha_d@2x.webp 540w,
+                                        ./images/team-member4/member4-desktop/misha_d@3x.webp 810w" type="image/webp"
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team-member4/member4-desktop/misha_d.jpg 270w,
+                                        ./images/team-member4/member4-desktop/misha_d@2x.jpg 540w,
+                                        ./images/team-member4/member4-desktop/misha_d@3x.jpg 810w" type="image/jpg"
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team-member4/member4-tablet/misha_t.webp 354w,
+                                        ./images/team-member4/member4-tablet/misha_t@2x.webp 708w,
+                                        ./images/team-member4/member4-tablet/misha_t@3x.webp 1062w" type="image/webp"
+                                media="(min-width: 768px)">
+                        <img srcset="./images/team-member4/member4-tablet/misha_t.jpg 354w,
+                                     ./images/team-member4/member4-tablet/misha_t@2x.jpg 708w,
+                                     ./images/team-member4/member4-tablet/misha_t@3x.jpg 1062w"
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                            src="./images/team-member4/member4-tablet/misha_t.jpg" alt="сотрудник №4 мужчина в очках и в футболке"
+                            class="comands-card__image" />
+                    </picture>
+
                 <h3 class="comands-card__name">Михаил Ермаков</h3>
                 <p class="comands-card__profession">UI Designer</p>
 
@@ -533,26 +640,23 @@
 
 <footer class="block-foot">
 <div class="container">
-    <div class="block-foot__general">
-    <div class="block-foot__general1">
-        <div class="footer-contacts">
+    <div class="block-foot__tab">
+    
+        <div class="footer-address">
         <a class="logo" href="index.html">Web<span class="logo__footer">Studio</span></a>
+        <address class="footer-address__address"> г. Киев, пр-т Леси Украинки, 26 </address>
+        <div class="footer-contacts">
         <ul class="footer-contacts__list">
-            <li>
-            <address class="footer-contacts__address"> г. Киев, пр-т Леси Украинки, 26 </address>
-            </li>
-            <li> <a class="footer-contacts__item" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
-            <li> <a class="footer-contacts__item" href="tel:+380961111111"> tel:+38 096 111 11 11 </a> </li>
+            <li class="footer-contacts__item"> <a class="footer-contacts__link" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
+            <li class="footer-contacts__item"> <a class="footer-contacts__link" href="tel:+380961111111"> tel:+38 096 111 11 11 </a> </li>
         </ul>
         </div>
-    </div>
+        </div>
    
     <!--добавление блока соц. сети-->
 
 
     <div class="block-foot__general2">
-    
-        
         <h2 class="block-foot__title">Присоединяйтесь</h2>
         
         <ul class="block-foot__list">
@@ -590,14 +694,14 @@
         </ul>
     
     </div>
-  
+    </div>
     <!--Добавление блока Подпишитесь на рассылку-->
 
     <div class="block-foot__general3">
         <h2 class="block-foot__title">Подпишитесь на рассылку</h2>
-        <form>
+        <form class="block-foot__form">
             <label for="mail">
-                <input class="block-foot__form" type="email" name="email" placeholder="E-mail"/>
+                <input class="block-foot__input" type="email" name="email" placeholder="E-mail"/>
             </label>
             <button class="foot-btn" type="button">Подписаться</button>
         </form>
@@ -605,7 +709,6 @@
     </div>
 
 
-    </div>
 </div>
 </footer>
 <script src="./js/modal.js"></script>

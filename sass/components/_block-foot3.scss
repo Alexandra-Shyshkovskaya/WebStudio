@@ -1,15 +1,41 @@
 .block-foot__general3 {
-    display: inline-block;
-    margin-left: 93px;
-
-    .block-foot__title {
-        @extend %foot-title;
-       }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
   }
 
-  .block-foot__form {
-    width: 358px;
-    height: 50px;
+  .block-foot__title {
+    @extend %foot-title;
+  }
+}
+
+.block-foot__tab {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+.block-foot__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+
+  .block-foot__input {
+    margin-bottom: 20px;
+    padding: 16px;
+    width: 100%;
+    max-width: 450px;
+
     border: 1px solid $border-foot-form;
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px $box-shadow-color);
@@ -17,46 +43,52 @@
     background-color: $background-hero;
     color: $border-foot-form;
 
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
 
     &::placeholder {
-        width: 47px;
-        height: 20px;
-        padding-top: 15px;
-        padding-left: 16px;
-        font-size: 16px;
-        line-height: 20px;
-        color: $color-fform-pholder;
-        @extend %text-decoration;
-        
-      }
- 
+      width: 47px;
+      height: 20px;
+      padding-top: 15px;
+      padding-left: 16px;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-fform-pholder;
+      @extend %text-decoration;
+    }
   }
 
-.foot-btn {
-    display: inline-flex;
+  .foot-btn {
+    display: flex;
     align-items: center;
-    justify-content: center; 
+
     @extend %button;
     background: $active-color;
-    box-shadow: 0px 4px 4px$box-shadow-color;
+    box-shadow: 0px 4px 4px $box-shadow-color;
     border: none;
     margin-left: 12px;
     font-weight: $sec-font-weight;
     text-align: center;
     color: $background-color;
 
-    &::after {
-        content: "";
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        background-image: url("../images/icon-send.svg");
-        background-size: contain;
-      }
-      
-  }
-  
-  
-  
- 
+    padding-right: 28px;
+    padding-left: 28px;
 
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      background-image: url("../images/icon-send.svg");
+      background-size: contain;
+    }
+  }
+}
