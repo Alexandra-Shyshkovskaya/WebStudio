@@ -1,8 +1,12 @@
 body {
-    background-color: $background-color;
-    color: $additional-text-color;
-    @extend %text-decoration;
-    letter-spacing: $letter-spacing;
-    margin: 0;
-  }
-  
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $additional-text-color;
+  @extend %text-decoration;
+  letter-spacing: $letter-spacing;
+  margin: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}

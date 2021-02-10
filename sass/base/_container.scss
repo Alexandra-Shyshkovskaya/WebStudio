@@ -15,28 +15,27 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+
   &--header {
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
     }
   }
-}
 
-&--hero {
-  padding: 118px 60px;
-  // width: 360px;
+  &--hero {
+    padding: 118px 60px;
 
-  @media screen and (min-width: 768px) {
-    padding: 118px 0;
-    width: 360px;
+    @media screen and (min-width: 768px) {
+      padding: 118px 0;
+      width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+      width: 696px;
+    }
   }
-
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0;
-    width: 696px;
-  }
-}
   &--footer {
     @media screen and (min-width: 1200px) {
       display: flex;
