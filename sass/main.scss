@@ -1,14 +1,6 @@
-@import "./base/normalize";
-
-@import "./utils/variables";
-
-@import "./base/fonts";
-@import "./utils/placeholders";
-@import "./utils/mixins";
-
-@import "./base/body";
-@import "./base/container";
-@import "./base/visually-hidden";
-@import "./base/defolts";
-
+//Utils
+@import "./utils/main";
+//Base
+@import "./base/base";
+//Components
 @import "./components/main";
