@@ -36,22 +36,19 @@
     fill: $background-color;
   }
 }
-  .block-foot__link {
-    @extend %property-display;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: $bg-foot-link;
-    transition: transform 250ms $timing-function;
-    transition-property: background-color;
-    outline: transparent;
+.block-foot__link {
+  @extend %property-display;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: $bg-foot-link;
+  transition: transform 250ms $timing-function;
+  transition-property: background-color;
+  outline: transparent;
 
-    &:focus,
-    &:hover {
-      background-color: $active-color;
-    }
+  &:focus,
+  &:hover {
+    background-color: $active-color;
   }
-
-  
 }

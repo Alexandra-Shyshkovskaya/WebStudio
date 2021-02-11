@@ -1,38 +1,62 @@
 .comands {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $background-icons;
 
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
+}
+.comands__title {
+  @extend %section-title;
 
-  &__title {
-    @extend %section-title;
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
-      font-size: 36px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
-  &__list {
-    @extend %idents;
-    @extend %property-display;
+}
 
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }
-  }
-  .comands__list .comands__item:not(:last-child) {
-    margin-right: 30px;
-  }
+.comands__list {
+  @extend %idents;
+  @extend %property-display;
 
-  .comands__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .comands-card__image {
+    margin-bottom: 30px;
+  }
+  .comands-card__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-text-color;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+  }
+  .comands-card__profession {
+    font-size: 16px;
+    line-height: 19px;
+    color: $additional-text-color;
+    text-align: center;
+    padding: 10px 0 16px;
+    margin: 0;
+  }
+}
+.comands__item {
+  padding-bottom: 24px;
+  text-align: center;
+
+  &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
-   @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
@@ -48,25 +72,6 @@
   box-shadow: 0px 1px 3px $box-shadow-ccard, 0px 1px 1px $box-shadow-ccard2,
     0px 2px 1px $drop-bg-color;
   border-radius: 0px 0px 4px 4px;
-
-  &__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: $main-text-color;
-    text-align: center;
-    padding-top: 30px;
-    margin: 0;
-  }
-
-  &__profession {
-    font-size: 16px;
-    line-height: 19px;
-    color: $additional-text-color;
-    text-align: center;
-    padding: 10px 0 16px;
-    margin: 0;
-  }
 }
 
 .team-link__list {
