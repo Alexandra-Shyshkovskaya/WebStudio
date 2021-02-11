@@ -18,7 +18,8 @@
 
 .comands__list {
   @extend %idents;
-  @extend %property-display;
+  list-style: none;
+  font-style: normal;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -29,26 +30,34 @@
     margin-bottom: 30px;
   }
   .comands-card__name {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: $main-text-color;
-    text-align: center;
-    padding-top: 30px;
-    margin: 0;
+    letter-spacing: 0.03em;
+    font-style: $font-style;
   }
   .comands-card__profession {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: $font-weight;
+    font-style: $font-style;
     font-size: 16px;
     line-height: 19px;
     color: $additional-text-color;
     text-align: center;
-    padding: 10px 0 16px;
-    margin: 0;
+    letter-spacing: 0.03em;
   }
 }
 .comands__item {
   padding-bottom: 24px;
   text-align: center;
+  background: $background-color;
+  box-shadow: 0px 1px 3px $box-shadow-ccard, 0px 1px 1px $box-shadow-ccard2,
+    0px 2px 1px $drop-bg-color;
+  border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -67,18 +76,11 @@
   }
 }
 
-.comands-card {
-  background: $background-color;
-  box-shadow: 0px 1px 3px $box-shadow-ccard, 0px 1px 1px $box-shadow-ccard2,
-    0px 2px 1px $drop-bg-color;
-  border-radius: 0px 0px 4px 4px;
-}
-
 .team-link__list {
   @extend %property-display;
   justify-content: center;
-  margin: 0;
-  padding: 0 0 30px;
+  margin-top: 16px;
+  padding: 0;
 
   .team-link__link {
     @extend %property-display;
