@@ -891,15 +891,47 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 0 50px 0;
   padding: 0;
   border-radius: 4px;
 }
 
-.btn-selection .btn-choice {
+@media screen and (max-width: 767px) {
+  .btn-selection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-selection {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-selection {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-selection__item {
+    margin-bottom: 15px;
+  }
+}
+
+.btn-selection__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-choice {
+  min-width: 73px;
+  min-height: 38px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -924,17 +956,13 @@ img {
   transition-property: background-color, color, box-shadow, -webkit-box-shadow;
 }
 
-.btn-selection .btn-choice:hover, .btn-selection .btn-choice:focus {
+.btn-choice:hover, .btn-choice:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-selection .btn-selection__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .btn {
@@ -1637,31 +1665,13 @@ img {
   font-size: 26px;
   color: #2196f3;
   line-height: 1.17;
-  /* @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
     font-size: 26px;
     line-height: 1.19;
   }
-*/
-  /* &--header {
-    padding: 16px 0;
-
-    @media screen and (min-width: 768px) {
-      padding: 26px 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding: 24px 0;
-    }
-  }
-
-  &--footer {
-    display: block;
-    margin-bottom: 20px;
-
-    @media screen and (max-width: 1199px) {
-      text-align: center;
-    }
-  }*/
 }
 
 .logo__header {
@@ -1670,6 +1680,33 @@ img {
 
 .logo__footer {
   color: #ffffff;
+}
+
+.logo--header {
+  padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .logo--header {
+    padding: 26px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    padding: 24px 0;
+  }
+}
+
+.logo--footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo--footer {
+    text-align: center;
+  }
 }
 
 .nav__list {
