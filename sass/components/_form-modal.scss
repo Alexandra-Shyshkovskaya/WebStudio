@@ -38,7 +38,7 @@
 
 .form-modal__name {
   padding-bottom: 4px;
-
+  text-align: left;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
@@ -114,9 +114,14 @@
     line-height: 1.61;
   }
 
-  .form-modal__link {
+  .link-agree {
     text-decoration-line: underline;
     color: $active-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
   }
 }
 

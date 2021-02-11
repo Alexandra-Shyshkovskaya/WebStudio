@@ -70,6 +70,7 @@ body, .block-foot__form .block-foot__input::placeholder {
   color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0.03em;
 }
 
 .mobile-site-menu__link, .mobile-contacts__tel, .mobile-contacts__mail, .mobile-social .mobile-social__list .mobile-social__link {
@@ -542,7 +543,7 @@ img {
   opacity: 1;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-  z-index: 1;
+  z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -601,7 +602,20 @@ img {
 }
 
 .btn-close {
-  float: right;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
   padding: 0;
   background-color: #ffffff;
   border: none;
@@ -614,14 +628,13 @@ img {
 }
 
 .btn-close .close-icon {
-  margin-top: 8px;
-  margin-right: 8px;
   background: #ffffff;
 }
 
 .btn-close:focus, .btn-close:hover {
   fill: #2196f3;
   cursor: pointer;
+  outline: transparent;
 }
 
 .block-foot {
@@ -634,11 +647,15 @@ img {
   .footer-address {
     margin-bottom: 60px;
   }
+  .footer-address__address {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
   .footer-address {
     text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -653,6 +670,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-address__address {
     margin-bottom: 9px;
+    margin-top: 20px;
   }
 }
 
@@ -1169,6 +1187,11 @@ img {
   display: none;
 }
 
+.contacts__list {
+  list-style: none;
+  font-style: normal;
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: -webkit-box;
@@ -1207,7 +1230,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: Roboto, sans-serif;
+    text-decoration: none;
     color: #757575;
     font-weight: bold;
     font-size: 12px;
@@ -1316,6 +1339,7 @@ img {
 
 .form-modal__name {
   padding-bottom: 4px;
+  text-align: left;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
@@ -1439,10 +1463,15 @@ img {
   }
 }
 
-.check-label .form-modal__link {
+.check-label .link-agree {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
 }
 
 .check-label::after {
@@ -1601,11 +1630,38 @@ img {
   }
 }
 
-.logo, .logo__header, .logo__footer {
+.logo {
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   color: #2196f3;
+  line-height: 1.17;
+  /* @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+*/
+  /* &--header {
+    padding: 16px 0;
+
+    @media screen and (min-width: 768px) {
+      padding: 26px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 24px 0;
+    }
+  }
+
+  &--footer {
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }*/
 }
 
 .logo__header {
@@ -1614,25 +1670,6 @@ img {
 
 .logo__footer {
   color: #ffffff;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    min-height: 60px;
-  }
 }
 
 .nav__list {
@@ -1650,7 +1687,7 @@ img {
     font-style: normal;
     margin-left: 88px;
   }
-  .nav__list .main-nav__item:not(:nth-child(1)) {
+  .nav__list .nav__item:not(:nth-child(1)) {
     margin-left: 50px;
   }
 }
@@ -1670,6 +1707,7 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;

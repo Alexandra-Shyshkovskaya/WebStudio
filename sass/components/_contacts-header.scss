@@ -3,6 +3,8 @@
 
   &__list {
     @extend %idents;
+    list-style: none;
+    font-style: normal;
   }
 
   @media screen and (min-width: 768px) {
@@ -35,7 +37,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    font-family: $font-family;
+    text-decoration: none;
     color: $additional-text-color;
     font-weight: $sec-font-weight;
     font-size: 12px;
