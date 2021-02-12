@@ -7,7 +7,12 @@
   }
 }
 .clients__title {
-  @extend %section-title;
+  font-weight: $sec-font-weight;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: $main-text-color;
+  @extend %idents;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
