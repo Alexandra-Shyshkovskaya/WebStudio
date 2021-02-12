@@ -38,11 +38,6 @@
   padding-bottom: 32px;
 }
 
-.mobile-contacts {
-  margin-left: 40px;
-  margin-bottom: 64px;
-}
-
 .mobile-site-menu__link,
 .mobile-contacts__tel,
 .mobile-contacts__mail,
@@ -83,13 +78,16 @@
   color: $additional-text-color;
 }
 
+.mobile-social {
+  margin-top: 64px;
+}
 .mobile-social__list {
   display: flex;
   flex-wrap: wrap;
 }
 .mobile-social__link {
   @extend %text-mobile;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: $active-color;
