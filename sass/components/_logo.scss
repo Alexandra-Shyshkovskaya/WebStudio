@@ -12,10 +12,12 @@
   }
 
   &__header {
+    @extend .logo;
     color: $text-color;
   }
 
   &__footer {
+    @extend .logo;
     color: $background-color;
   }
 
