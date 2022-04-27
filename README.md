@@ -6,5 +6,5 @@ The information is conveniently structured and contains a description of the act
 [_WebStudio_] (https://alexandra-shyshkovskaya.github.io/WebStudio)
 
 <a href="https://alexandra-shyshkovskaya.github.io/WebStudio">
-<img src="https://prnt.sc/hVSmXI4C8eWT" alt="WebStudio">
+<img src="./images/screenshot.png" alt="WebStudio">
 </a>
